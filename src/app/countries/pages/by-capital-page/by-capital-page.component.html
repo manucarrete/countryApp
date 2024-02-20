@@ -1,3 +1,4 @@
 <p>by-capital-page works!</p>
-<app-search-box [placeholder]="'Introduce el término de búsqueda...'" (search)="getValue($event)"></app-search-box>
-  
+<app-search-box [placeholder]="'Introduce el término de búsqueda...'" (search)="searchByCapital($event)"></app-search-box>
+  <!-- En by-capital-page.component.html -->
+<app-country-table [countries]="countries"></app-country-table>
