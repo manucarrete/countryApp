@@ -14,6 +14,10 @@ Generamos componentes para diferentes partes de la aplicación:
     - Home Page
     - About Page
     - Contact Page
+    - By Capital Page
+    - By Region Page
+    - By Country Page
+    - Country Page
 
 2. **Sidebar:** 
 
