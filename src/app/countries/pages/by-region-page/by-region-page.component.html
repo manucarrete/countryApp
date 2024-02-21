@@ -1,1 +1,5 @@
-<p>by-region-page works!</p>
+<br>
+<h2>Countries by region</h2>
+<br>
+<app-search-box [placeholder]="'Introduce el término de búsqueda...'" (search)="searchByRegion($event)"></app-search-box>
+<app-country-table [countries]="countries"></app-country-table>

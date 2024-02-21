@@ -26,7 +26,8 @@ No hay países que mostrar...
           <td>{{ country.name.common }}</td>
           <td>{{ country.capital }}</td>
           <td>{{ country.population | number }}</td>
-          <td><a href="#">Ver más...</a></td>
+          <td><a [routerLink]="['/countries/id', country.ccn3]">Ver más...</a></td>
+
   </tr>
 </tbody>
 </div>

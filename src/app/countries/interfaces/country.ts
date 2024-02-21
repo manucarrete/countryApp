@@ -7,5 +7,11 @@ export interface Country {
     flags: {
         png: string;
       };
-      flag: string;
-}
+    flag: string;
+    ccn3: string;
+    translations: {
+      [key: string]: {
+        common: string;
+      }
+    }
+  }
