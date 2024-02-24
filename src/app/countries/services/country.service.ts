@@ -19,14 +19,19 @@ export class CountryService {
   }
 
   searchByCountry(name: string): Observable<Country[]> {
-    return this.http.get<Country[]>(`${this.apiUrl}/name/${name}`);
+    return this.http.get<Country[]>(`${this.apiUrl}/name/${name}`)
+    .pipe(
+      catchError(error => of([]))
+    );
   }
 
   searchByRegion(region: string): Observable<Country[]> {
-    return this.http.get<Country[]>(`${this.apiUrl}/region/${region}`);
+    return this.http.get<Country[]>(`${this.apiUrl}/region/${region}`)
+    .pipe(
+      catchError(error => of([]))
+    );
   }
  
-
   searchCountryByAlphaCode(code: string): Observable<Country | null> {
     const url = `${this.apiUrl}/alpha/${code}`;
     return this.http.get<Country[]>(url).pipe(

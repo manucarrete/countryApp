@@ -25,7 +25,7 @@ export class ByCountryPageComponent implements OnInit{
     this.countryService.searchByCountry(country).subscribe({
       next: (countries) => {
         this.countries = countries;
-        console.log(countries[0].name);
+        //console.log(countries[0].name);
       },
       error: (error) => {
         console.error('Error fetching countries:', error);
